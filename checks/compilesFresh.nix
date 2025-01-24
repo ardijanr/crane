@@ -15,7 +15,6 @@ let
     in
     ''
       cargo ${cmd} \
-        --release \
         --message-format json-diagnostic-short \
         ${extra} \
         ${args.cargoExtraArgs or ""} >${cmd}out
